@@ -12,14 +12,14 @@
       href="./images/favicon-32x32.png"
     />
 
-    <!-- Fonts -->
-    <!-- font-family: 'Red Hat Display', sans-serif; -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="stylesheet" href="styles.css" />
 
     <title>Frontend Mentor | Order summary card</title>
 
@@ -33,24 +33,52 @@
     <main class="container">
       <div class="card">
         <div class="hero">
-          <img src="./images/illustration-hero.svg" width="450" height="220" alt="">
+          <img
+            src="./images/illustration-hero.svg"
+            width="450"
+            height="220"
+            alt=""
+          />
         </div>
         <div class="summary">
           <h1>Order Summary</h1>
-          <p>You can now listen to millions of songs, audiobooks, and
-        podcasts on any device anywhere you like!</p>
+          <p>
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
+          </p>
         </div>
-        </div>
+
         <div class="plan">
           <ul>
-            <li><img src="./images/icon-music.svg" alt="" aria-hidden="true"></li>
-          <li><p>Annual Plan $59.99/year<</p></li>
-        <li><a href="#" title="Change Price Plan">Change</a></li>>
-        
-        </ul>
+            <li>
+              <img
+                src="./images/icon-music.svg"
+                width="48"
+                height="48"
+                alt=""
+                aria-hidden="true"
+              />
+            </li>
+
+            <li>
+              <p>Annual Plan</p>
+              <p>$59.99/year</p>
+            </li>
+            <li><a href="#" aria-label="Change Price Plan">Change</a></li>
+          </ul>
         </div>
-          
-        Proceed to Payment Cancel Order
+        <div class="confirm">
+          <ul>
+            <li>
+              <button>
+                <a href="#" aria-label="Proceed to Payment"
+                  >Proceed to Payment</a
+                >
+              </button>
+            </li>
+            <li><a href="#" aria-label="Cancel Order">Cancel Order</a></li>
+          </ul>
+        </div>
       </div>
     </main>
     <!-- <div class="attribution">
