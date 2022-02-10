@@ -52,6 +52,11 @@ a {
   background-color: hsl(0, 0%, 100%);
 }
 
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
 .plan {
   background-color: var(--Very_pale_blue);
 }
