@@ -46,13 +46,30 @@ a {
 }
 
 .card {
+  overflow: hidden;
   width: 88vw;
   text-align: center;
   background-color: hsl(0, 0%, 100%);
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
   border-radius: 1.6rem;
 }
 
+.hero img {
+  width: 100%;
+  height: auto;
+  border-radius: 1.6rem 1.6rem 0 0;
+}
+
+.card-wrapper {
+  padding: 1.8rem 1.7rem;
+}
+
+.summary {
+  margin-bottom: 1.6rem;
+}
+
 .summary h1 {
+  margin-top: 0;
   font-size: 1.4rem;
   font-weight: 900;
   color: var(--Dark_blue);
@@ -63,18 +80,16 @@ a {
   color: var(--Desaturated_blue);
 }
 
-.hero img {
-  width: 100%;
-  height: auto;
-  border-radius: 1.6rem 1.6rem 0 0;
-}
-
 .price {
+  font-size: 0.9rem;
+  line-height: 0.5;
   background-color: var(--Very_pale_blue);
-  text-align: justify;
+  border-radius: 0.8rem;
+  margin-bottom: 2.2rem;
 }
 
 .price ul {
+  height: 5rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -82,7 +97,7 @@ a {
 
 .price p:first-of-type {
   color: var(--Dark_blue);
-  font-weight: 700;
+  font-weight: 900;
 }
 
 .price p:last-of-type {
@@ -90,20 +105,34 @@ a {
   font-weight: 500;
 }
 
+.price a {
+  text-decoration-line: underline;
+  color: var(--Bright_blue);
+  font-weight: 700;
+}
+
 .confirm {
   margin-top: 1em;
+  font-size: 0.9rem;
 }
 
 .confirm ul {
   display: flex;
   flex-direction: column;
-  gap: 1.3em;
+  gap: 1.9rem;
 }
 
 .confirm-btn {
-  padding: 0.7em 3em;
+  padding: 0.8rem 4.1rem;
+  margin-bottom: 1.3rem;
   border-radius: 0.8em;
   background-color: var(--Bright_blue);
   font-weight: 900;
   color: hsl(0, 0%, 100%);
+  box-shadow: 0px 10px 20px hsl(245, 75%, 52%, 0.3);
+}
+
+.cancel {
+  color: var(--Desaturated_blue);
+  font-weight: 900;
 }
