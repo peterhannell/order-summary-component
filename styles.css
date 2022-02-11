@@ -15,8 +15,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-size: 1rem;
-  font-family: "Red Hat Display", sans-serif;
+  font: 1rem/1.6 "Red Hat Display", sans-serif;
   background: var(--Pale_blue) no-repeat
     url(./images/pattern-background-mobile.svg);
 }
@@ -50,19 +49,61 @@ a {
   width: 88vw;
   text-align: center;
   background-color: hsl(0, 0%, 100%);
+  border-radius: 1.6rem;
+}
+
+.summary h1 {
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: var(--Dark_blue);
+}
+
+.summary p {
+  font-weight: 500;
+  color: var(--Desaturated_blue);
 }
 
 .hero img {
   width: 100%;
   height: auto;
+  border-radius: 1.6rem 1.6rem 0 0;
 }
 
-.plan {
+.price {
   background-color: var(--Very_pale_blue);
+  text-align: justify;
 }
 
-.plan ul {
+.price ul {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+
+.price p:first-of-type {
+  color: var(--Dark_blue);
+  font-weight: 700;
+}
+
+.price p:last-of-type {
+  color: var(--Desaturated_blue);
+  font-weight: 500;
+}
+
+.confirm {
+  margin-top: 1em;
+}
+
+.confirm ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3em;
+}
+
+.confirm-btn {
+  padding: 0.7em 3em;
+  border-radius: 0.8em;
+  background-color: var(--Bright_blue);
+  font-weight: 900;
+  color: hsl(0, 0%, 100%);
 }
