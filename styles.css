@@ -130,7 +130,7 @@ a {
 }
 
 .confirm-btn {
-  padding: 0.8rem 4.1rem;
+  padding: 0.8em 4.1em;
   margin-bottom: 1.3rem;
   border-radius: 0.8em;
   background-color: var(--Bright_blue);
@@ -178,6 +178,6 @@ a {
   }
 
   .confirm-btn {
-    padding: 0.8rem 5.6rem;
+    padding: 0.8em 5.6em;
   }
 }
