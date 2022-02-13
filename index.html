@@ -16,7 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./assets/styles.css" />
     <title>Frontend Mentor | Order summary card</title>
   </head>
   <body>
@@ -24,7 +24,7 @@
       <div class="card">
         <div class="hero">
           <img
-            src="./images/illustration-hero.svg"
+            src="./assets/images/illustration-hero.svg"
             width="450"
             height="220"
             alt=""
@@ -38,37 +38,30 @@
               on any device anywhere you like!
             </p>
           </div>
-          <div class="price">
-            <ul>
-              <li>
-                <img
-                  src="./images/icon-music.svg"
-                  width="48"
-                  height="48"
-                  alt=""
-                  aria-hidden="true"
-                />
-              </li>
-              <li>
-                <p>Annual Plan</p>
+          <div class="plan">
+            <div class="plan-details">
+              <img
+                src="./assets/images/icon-music.svg"
+                width="48"
+                height="48"
+                alt=""
+                aria-hidden="true"
+              />
+              <div>
+                <h3>Annual Plan</h3>
                 <p>$59.99/year</p>
-              </li>
-              <li><a href="#" aria-label="Change Price Plan">Change</a></li>
-            </ul>
+              </div>
+            </div>
+            <a href="#" aria-label="Change Price Plan">Change</a>
           </div>
           <div class="confirm">
-            <ul>
-              <li>
-                <a href="#" aria-label="Proceed to Payment" class="confirm-btn"
-                  >Proceed to Payment</a
-                >
-              </li>
-              <li>
-                <a href="#" aria-label="Cancel Order" class="cancel-btn"
-                  >Cancel Order</a
-                >
-              </li>
-            </ul>
+            <a href="#" aria-label="Proceed to Payment" class="confirm-btn"
+              >Proceed to Payment</a
+            >
+
+            <a href="#" aria-label="Cancel Order" class="cancel-btn"
+              >Cancel Order</a
+            >
           </div>
         </div>
       </div>
