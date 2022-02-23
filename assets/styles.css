@@ -1,4 +1,4 @@
-@import url(./normalize.css);
+/* @import url(./normalize.css); */
 
 :root {
   --Pale_blue: hsl(225, 100%, 94%);
@@ -8,11 +8,17 @@
   --Dark_blue: hsl(223, 47%, 23%);
 }
 
+html {
+height: 100%
+}
+
 body {
   background: var(--Pale_blue) no-repeat
     url(./images/pattern-background-mobile.svg);
   font-family: "Red Hat Display", sans-serif;
+min-height: 100%;
 }
+
 
 img,
 picture {
@@ -39,7 +45,7 @@ a {
   }
 
   .card {
-    max-width: 28%;
+    max-width: 450px;
   }
 }
 
@@ -53,10 +59,11 @@ a {
 
 .card {
   overflow: hidden;
-  width: 87.5%;
+  max-width: 325px;
   border-radius: 25px;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  transform: scale(0.9);
 }
 
 .card-wrapper {
